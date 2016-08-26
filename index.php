@@ -25,6 +25,12 @@ $app['router']->add('/user', function () use ($app) {
     echo $users->getOne($app, $_GET['id']);
 });
 
+$app['router']->add('/user/update', function () use ($app) {
+    require 'controllers/users.php';
+    $users = new Users();
+    echo $users->update($app, $_GET['id'], $_GET['field'], $_GET['value']);
+});
+
 $app['router']->add('/users', function () use ($app) {
     require 'controllers/users.php';
     $users = new Users();

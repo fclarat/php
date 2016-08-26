@@ -30,9 +30,9 @@ class QueryBuilder
         return $statement->rowCount();
     }
 
-    public function update($table, $id, $field, $text)
+    public function update($table, $id, $field, $value)
     {
-        $statement = $this->pdo->prepare("delete from {$table} where id={$id}");
+        $statement = $this->pdo->prepare("update {$table} set {$field}='{$value}' where id={$id}");
         $statement->execute();
         return $statement->rowCount();
     }
