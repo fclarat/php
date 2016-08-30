@@ -1,9 +1,9 @@
 
 # setup:
-1) Importar olx.sql (la base de datos se va a llamar olx)
-2) Configurar los datos de la base en Config.php
-3) Correr el comando composer install
-4) Correr un server en le directorio  php -S localhost:8000
+1. Importar olx.sql (la base de datos se va a llamar olx)
+2. Configurar los datos de la base en Config.php
+3. Correr el comando composer install
+4. Correr un server en le directorio  php -S localhost:8000
 
 
 - All users: http://localhost:8000/users
