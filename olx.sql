@@ -19,7 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `olx`
 --
-
+CREATE DATABASE IF NOT EXISTS `olx`;
+USE `olx`;
 -- --------------------------------------------------------
 
 --
